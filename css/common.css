@@ -1,0 +1,383 @@
+@charset "utf-8";
+@import url(core.css);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*상단(로고+사이트메뉴+메인메뉴)*/
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #efefef; /*outline:1px solid red;*/
+}
+.header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.header > .head {
+  width: 90%;
+  height: auto;
+  margin: 0 auto; /*outline:1px solid red;*/
+}
+.header > .head::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*로고*/
+.header > .head > .logoBox {
+  position: relative;
+  width: 20%;
+  padding: 5.5% 0;
+  margin: 0 auto;
+  background: url(../images/logo.png) no-repeat center/100%; /*outline:1px solid red;*/
+}
+.header > .head > .logoBox > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; /*outline:1px solid red;*/
+}
+
+/*사이드메뉴*/
+.header > .head > .sideBox {
+  width: 30%;
+  float: right;
+  margin-top: -8%;
+  display: block; /*outline:1px solid blue;*/
+}
+.header > .head > .sideBox > ul {
+  float: right;
+  margin-right: 0; /*outline:1px solid red;*/
+}
+.header > .head > .sideBox > ul > li {
+  text-align: center;
+  display: block; /*outline:1px solid blue;*/
+}
+.header > .head > .sideBox > ul > li::after {
+  content: "｜";
+  clear: both;
+  display: inline-block;
+  float: right;
+  margin: 0 5px;
+  color: #535353;
+}
+.header > .head > .sideBox > ul > li:last-child::after {
+  content: "";
+  clear: both;
+  display: inline-block;
+  color: #eee;
+  margin: 0;
+}
+.header > .head > .sideBox > ul > li > a {
+  font: 400 0.7rem "NanumGothic";
+  color: #535353;
+}
+.header > .head > .sideBox > ul > li > a:hover {
+  font-weight: bold;
+  color: #ccc;
+}
+
+/*검색*/
+.header > .head > .sideBox > .search {
+  position: relative;
+  width: 66%;
+  float: right;
+  margin-top: 5%; /*outline:1px solid red;*/
+}
+.header > .head > .sideBox > .search > input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background-color: #fff;
+}
+.header > .head > .sideBox > .search > button {
+  position: absolute;
+  top: 10%;
+  right: 1%;
+  width: 5%;
+  padding: 3% 0;
+  background: url(../images/search.png) no-repeat center/cover;
+  border: none;
+  outline: none;
+  cursor: pointer; /*outline:1px solid red;*/
+}
+
+/*메인메뉴*/
+.header > .gnbBox {
+  width: 100%;
+  height: auto;
+  padding: 0.4% 0;
+  background-color: #d8d8d8;
+  box-shadow: inset 0 2px 10px #7c7c7e;
+}
+.header > .gnbBox::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.header > .gnbBox > .gnb {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 1% 0; /*outline:1px solid black;*/
+}
+.header > .gnbBox > .gnb > .menu {
+  width: auto;
+  height: auto;
+  margin-left: 6.5%;
+  z-index: 1; /*outline:1px solid red;*/
+}
+.header > .gnbBox > .gnb > .menu::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.header > .gnbBox > .gnb > .menu01 {
+  margin-left: 17.5%;
+}
+.header > .gnbBox > .gnb > .menu > a {
+  color: #535353;
+  font: bold 1.5rem "NanumGothic"; /*outline:1px solid red;*/
+}
+.header > .gnbBox > .gnb > .menu > a:hover {
+  opacity: 0.3;
+}
+.header > .gnbBox > .gnb > .menu > ol {
+  position: absolute;
+  top: 110%;
+  padding: 0 5%;
+  width: auto;
+  height: 0;
+  margin: 0 auto;
+  background-color: #d8d8d8;
+  border-radius: 0px 0px 15px 15px;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+  overflow: hidden; /*outline:1px solid green;*/
+  z-index: 2;
+  box-shadow: inset 0 2px 10px #7c7c7e;
+}
+.header > .gnbBox > .gnb > .menu > ol::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.header > .gnbBox > .gnb > .menu:hover > ol {
+  height: 100%;
+  padding: 0 5% 1%;
+}
+.header > .gnbBox > .gnb > .menu > ol > li {
+  /*outline:1px solid blue;*/
+}
+.header > .gnbBox > .gnb > .menu > ol > li::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.header > .gnbBox > .gnb > .menu > ol > li:last-child {
+  margin-right: 0;
+}
+.header > .gnbBox > .gnb > .menu > ol > li > a {
+  width: auto;
+  height: auto;
+  color: #535353;
+  font: bold 1.2rem/350% "NanumGothic";
+  display: block; /*outline:1px solid gold;*/
+}
+.header > .gnbBox > .gnb > .menu > ol > li > a:hover {
+  color: #fff;
+}
+
+.header > .gnbBox > .gnb > .menu01 > ol {
+  width: 35%;
+  left: 5.5%;
+  display: block;
+}
+.header > .gnbBox > .gnb > .menu02 > ol {
+  width: 79%;
+  left: 11%;
+}
+.header > .gnbBox > .gnb > .menu02 > ol > li {
+  margin: 0 1%;
+}
+.header > .gnbBox > .gnb > .menu02 .line02 {
+  margin: 0 3%;
+}
+.header > .gnbBox > .gnb > .menu03 > ol {
+  width: 73%;
+  left: 14%;
+}
+.header > .gnbBox > .gnb > .menu03 .line02 {
+  margin: 0 2.3%;
+}
+.header > .gnbBox > .gnb > .menu04 > ol {
+  width: 73%;
+  left: 25%;
+}
+.header > .gnbBox > .gnb > .menu04 .line02 {
+  margin: 0 2.3%;
+}
+.header > .gnbBox > .gnb > .menu06 > ol {
+  width: 27.1%;
+  left: 66.5%;
+}
+.line02 {
+  margin: 0 8%;
+  font: 1.3rem/320% "NanumGothic";
+}
+
+.contWrap {
+  width: 100%;
+  height: auto;
+  background-color: #efefef;
+  padding-bottom: 2%; /*outline:1px solid red;*/
+}
+.contWrap::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*하단*/
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #e4e4e4;
+}
+.footer::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.footer01 {
+  width: 100%;
+  height: auto;
+  background-color: #d8d8d8;
+  border-top: 5px solid #b6b6b6;
+}
+.footer01 > ul {
+  width: auto;
+  height: auto;
+  margin: 0 auto; /*outline:1px solid red;*/
+}
+.footer01 > ul > li {
+  padding: 1% 0; /*outline:1px solid blue;*/
+}
+.footer01 > ul > li:first-child {
+  margin-left: 10%;
+}
+.footer01 > ul > li > a {
+  font: 400 1.4rem "NanumGothic";
+  color: #535353;
+}
+.footer01 > ul > li > a:hover {
+  color: #000;
+}
+.footer02 {
+  width: 100%;
+  height: auto;
+  padding: 5% 0;
+}
+.footer02 > p {
+  text-align: center;
+  font: 400 1.3rem "NanumGothic";
+  color: #535353;
+  line-height: 120%;
+}
+.line03 {
+  margin: 0 4%;
+  font: 400 1.3rem "NanumGothic";
+  color: #535353;
+}
+
+@media screen and (min-width: 100px) and (max-width: 999px) {
+  .navbar_toggle_btn {
+    display: block;
+    top: 6px;
+    right: 16px;
+    width: 10%;
+  }
+
+  .contWrap {
+    width: 100%;
+    height: auto;
+    background-color: #efefef;
+    padding-bottom: 2%;
+    margin-top: 22%; /*outline:1px solid red;*/
+  }
+  .contWrap::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  /*하단*/
+  .footer {
+    width: 100%;
+    height: auto;
+    background-color: #e4e4e4;
+  }
+  .footer::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .footer01 {
+    width: 100%;
+    height: auto;
+    background-color: #d8d8d8;
+    border-top: 5px solid #b6b6b6;
+  }
+  .footer01 > ul {
+    width: 90%;
+    height: auto;
+    margin: 0 auto; /*outline:1px solid red;*/
+  }
+  .footer01 > ul > li {
+    padding: 2% 2%;
+    width: auto; /*outline:1px solid blue;*/
+  }
+  .footer01 > ul > li:first-child {
+    margin-left: 0;
+    padding: 2% 0;
+  }
+  .footer01 > ul > li:last-child {
+    float: right;
+    padding: 2% 0;
+  }
+  .footer01 > ul > li > a {
+    font: 400 2.8rem "NanumGothic";
+    color: #535353;
+  }
+  .footer01 > ul > li > a:hover {
+    color: #000;
+  }
+  .footer02 {
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+  }
+  .footer02 > p {
+    text-align: center;
+    font: 400 2.9rem "NanumGothic";
+    color: #535353;
+    line-height: 120%;
+  }
+  .line03 {
+    display: none;
+    margin: 0 4%;
+    font: 400 1.3rem "NanumGothic";
+    color: #535353;
+  }
+}

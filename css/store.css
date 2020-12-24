@@ -1,0 +1,88 @@
+@import url(common.css);
+
+.contWrap{ width:100%; height:auto; background-color:#efefef; }
+.contWrap::after{content:""; clear:both; display:block; }
+
+.titleBox{ position:relative; width:17%; height:auto; margin:0 auto; padding:8% 0; /*outline:1px solid red;*/ }
+.titleBox::after{content:""; clear:both; display:block; }
+.div{ position:absolute; top:50%; transform:translateY(-50%); width:31%; height:auto; padding:14% 0; border:1.5px solid #ccc; /*outline:1px solid red;*/ }
+.div01{ border-right:none; left:0;}
+.div03{ border-left:none; right:0; }
+.div02{ top:50%; left:50%; transform:translate(-50%, -50%); width:auto; height:auto; text-align:center; border:none; padding:0 4%; }
+.div02>p{  font:bold 2.4rem/4.5rem 'NanumGothic'; color:#535353;  }
+
+.storeBox{ width:90%; height:auto; margin:0 auto; /*outline:1px solid green;*/ }
+.storeBox::after{content:""; clear:both; display:block; }
+.storeSmallBox{ position:relative; width:100%; height:auto; margin-bottom:6%; border:7px solid #d2d2d2; background-color:#e1e1e1; /*outline:1px solid purple;*/ }
+.storeSmallBox::after{content:""; clear:both; display:block; }
+.ssBox{ position:relative; padding:20.4% 0; }
+.storeImg{ position:absolute; width:50%; height:auto; padding:20.4% 0; left:0; top:0;  /*outline:1px solid gold;*/ }
+
+/*1*/
+.storeSmallBox01 .storeImg01{ background:url(../images/store1.jpg)no-repeat center/cover; }
+.storeSmallBox01 .storeImg02{ background:url(../images/store1_1.jpg)no-repeat center/cover; }
+.storeSmallBox01 .storeImg03{ background:url(../images/store1_2.jpg)no-repeat center/cover; }
+.storeSmallBox01 .storeImg04{ background:url(../images/store1_3.jpg)no-repeat center/cover; }
+
+/*2*/
+.storeSmallBox02 .storeImg01{ background:url(../images/store2.jpg)no-repeat center/cover; }
+.storeSmallBox02 .storeImg02{ background:url(../images/store2_1.jpg)no-repeat center/cover; }
+.storeSmallBox02 .storeImg03{ background:url(../images/store2_2.jpg)no-repeat center/cover; }
+.storeSmallBox02 .storeImg04{ background:url(../images/store2_3.jpg)no-repeat center/cover; }
+
+/*3*/
+.storeSmallBox03 .storeImg01{ background:url(../images/store3.jpg)no-repeat center/cover; }
+.storeSmallBox03 .storeImg02{ background:url(../images/store3_1.jpg)no-repeat center/cover; }
+.storeSmallBox03 .storeImg03{ background:url(../images/store3_2.jpg)no-repeat center/cover; }
+.storeSmallBox03 .storeImg04{ background:url(../images/store3_3.jpg)no-repeat center/cover; }
+
+/*4*/
+.storeSmallBox04 .storeImg01{ background:url(../images/store4.jpg)no-repeat center/cover; }
+.storeSmallBox04 .storeImg02{ background:url(../images/store4_1.jpg)no-repeat center/cover; }
+.storeSmallBox04 .storeImg03{ background:url(../images/store4_2.jpg)no-repeat center/cover; }
+.storeSmallBox04 .storeImg04{ background:url(../images/store4_3.jpg)no-repeat center/cover; }
+
+/*5*/
+.storeSmallBox05 .storeImg01{ background:url(../images/store5.jpg)no-repeat center/cover; }
+.storeSmallBox05 .storeImg02{ background:url(../images/store5_1.jpg)no-repeat center/cover; }
+.storeSmallBox05 .storeImg03{ background:url(../images/store5_2.jpg)no-repeat center/cover; }
+.storeSmallBox05 .storeImg04{ background:url(../images/store5_3.jpg)no-repeat center/cover; }
+
+/*6*/
+.storeSmallBox06 .storeImg01{ background:url(../images/store6.jpg)no-repeat center/cover; }
+.storeSmallBox06 .storeImg02{ background:url(../images/store6_1.jpg)no-repeat center/cover; }
+.storeSmallBox06 .storeImg03{ background:url(../images/store6_2.jpg)no-repeat center/cover; }
+.storeSmallBox06 .storeImg04{ background:url(../images/store6_3.jpg)no-repeat center/cover; }
+
+/*7*/
+.storeSmallBox07 .storeImg01{ background:url(../images/store7.jpg)no-repeat center/cover; }
+.storeSmallBox07 .storeImg02{ background:url(../images/store7_1.jpg)no-repeat center/cover; }
+.storeSmallBox07 .storeImg03{ background:url(../images/store7_2.jpg)no-repeat center/cover; }
+.storeSmallBox07 .storeImg04{ background:url(../images/store7_3.jpg)no-repeat center/cover; }
+
+.zIndex{ z-index:1;}
+.impormation{position:absolute; top:50%; right:0; transform:translateY(-50%); width:47%; height:auto; /*outline:1px solid red;*/ }
+.impormation01 img{ width:58%; height:auto; }
+.impormation02 img{ width:38%; height:auto; }
+.impormation03 img{ width:38%; height:auto; }
+.impormation04 img{ width:38%; height:auto; }
+.impormation05 img{ width:38%; height:auto; }
+.impormation06 img{ width:40%; height:auto; }
+.impormation07 img{ width:40%; height:auto; }
+.impormation address{ width:90%; height:auto; margin-top:2%; margin-left:2%; /*outline:1px solid blue;*/ }
+.impormation address p{ font:600 1.14rem 'NanumGothic'; color:#535353; /*outline:1px solid red;*/ }
+.contBox{ width:90%; height:auto; margin-top:6%; margin-left:4%; /*outline:1px solid red;*/ }
+.contBox>p{ font:bold 1.14rem 'NanumGothic'; color:#000; margin-bottom:3%; /*outline:1px solid green;*/ }
+.contBox>p>span{ font-weight:normal; }
+.contBox>p:nth-child(3){ margin-top:6%; }
+.contBox>p:last-child{ font-size:1.3rem; color:#535353; margin-bottom:0; }
+.tel01{ font:bold 1rem 'NanumGothic'; color:#000; }
+.tel02{ font:normal 0.7rem 'NanumGothic'; color:#000; }
+.timeBox{ width:50%; height:auto; padding:3% 0 3% 5%; border:1px solid #ccc; border-radius:15px; /*outline:1px solid gold;*/ }
+.timeBox>aside{ /*outline:1px solid red;*/ }
+.timeBox>aside:nth-child(2){ padding:2% 0; }
+.timeBox>aside>.bullet{ display:inline-block; width:1%; height:auto; padding:1%; background-color:#80e825; border-radius:50%; }
+.timeBox>aside>p{ display:inline-block; }
+.timeBox>aside>.day{ width:27%; font:bold 0.9rem 'NanumGothic'; color:#535353; margin-left:2%; /*outline:1px solid blue;*/ }
+.timeBox>aside>.line{ font:normal 0.7rem 'NanumGothic'; color:#535353; padding:0 3%; /*outline:1px solid purple;*/ }
+.timeBox>aside>.time{ font:normal 0.8rem 'NanumGothic'; color:#535353; }

@@ -1,0 +1,61 @@
+@import url(common.css);
+
+.contWrap{ width:100%; height:auto; background-color:#efefef; }
+.contWrap::after{content:""; clear:both; display:block; }
+
+.titleBox{ position:relative; width:33%; height:auto; margin:0 auto; padding:8% 0; /*outline:1px solid red;*/ }
+.titleBox::after{content:""; clear:both; display:block; }
+.div{ position:absolute; top:50%; transform:translateY(-50%); width:20%; height:auto; padding:14% 0; border:1.5px solid #ccc; /*outline:1px solid red;*/ }
+.div01{ border-right:none; left:0; }
+.div03{ border-left:none; right:0; }
+.div02{ top:50%; left:50%; transform:translate(-50%, -50%); width:auto; height:auto; text-align:center; border:none; padding:0 4%; }
+.div02>p{  font:bold 2.4rem/4.5rem 'NanumGothic'; color:#535353;  }
+
+.shopBox{ width:90%; height:auto; margin:0 auto; /*outline:1px solid green;*/ }
+.shopBox::after{content:""; clear:both; display:block; }
+.middleshopBox{ width:100%; height:auto; margin-top:0.66%; /*outline:1px solid black;*/ }
+.middleshopBox::after{content:""; clear:both; display:block; }
+.middleshopBox01{ margin-top:0; }
+.smallshopBox{ position:relative; float:left; width:24.5%; height:auto; padding:20% 0; margin-left:0.66%; }
+.smallshopBox01{ background:url(../images/suit1.jpg)no-repeat center/cover; }
+.smallshopBox02{ background:url(../images/suit2.jpg)no-repeat center/cover; }
+.smallshopBox03{ background:url(../images/suit3.jpg)no-repeat center/cover; }
+.smallshopBox04{ background:url(../images/suit4.jpg)no-repeat center/cover; }
+.smallshopBox05{ background:url(../images/suit5.jpg)no-repeat center/cover; }
+.smallshopBox06{ background:url(../images/suit6.jpg)no-repeat center/cover; }
+.smallshopBox07{ background:url(../images/suit7.jpg)no-repeat center/cover; }
+.smallshopBox08{ background:url(../images/suit8.jpg)no-repeat center/cover; }
+.smallshopBox09{ background:url(../images/suit9.jpg)no-repeat center/cover; }
+.smallshopBox10{ background:url(../images/suit10.jpg)no-repeat center/cover; }
+.smallshopBox11{ background:url(../images/suit11.jpg)no-repeat center/cover; }
+.smallshopBox12{ background:url(../images/suit12.jpg)no-repeat center/cover; }
+.smallshopBox13{ background:url(../images/suit13.jpg)no-repeat center/cover; }
+.smallshopBox14{ background:url(../images/suit14.jpg)no-repeat center/cover; }
+.smallshopBox15{ background:url(../images/suit15.jpg)no-repeat center/cover; }
+.smallshopBox16{ background:url(../images/suit16.jpg)no-repeat center/cover; }
+.smallshopBox17{ background:url(../images/suit17.jpg)no-repeat center/cover; }
+.smallshopBox18{ background:url(../images/suit18.jpg)no-repeat center/cover; }
+.smallshopBox19{ background:url(../images/suit19.jpg)no-repeat center/cover; }
+.smallshopBox20{ background:url(../images/suit20.jpg)no-repeat center/cover; }
+.smallshopBox:first-child{ margin-left:0; }
+.sb_smallBox{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:100%; height:100%; background-color:#232323; opacity:0.75; }
+.price{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-weight:bold; font-size:2rem; color:#fff; }
+.productName{ width:80%; position:absolute; top:30%; left:50%; transform:translateX(-50%); text-align:center;  font: 1rem 'NanumGothic'; color:#535353; color:#fff; /*outline:1px solid red;*/ }
+.productName::after{content:""; clear:both; display:block; }
+.putBox{ display:inline-block; float:left; width:15%; padding:7%; height:auto; border:1px solid #ccc; }
+.putBox01{ border-right:none; }
+.putBox02{ width:auto; height:auto; border:none; padding:0 4%; }
+.putBox03{ border-left:none; }
+.xBox{ width:auto; height:auto; opacity:0; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; }
+.smallshopBox:hover>.xBox{ opacity:1; }
+/*.sb_smallBox,.productName,.price{ display:none; }*/
+/*.smallshopBox:hover>.sb_smallBox,.smallshopBox:hover>.productName,.smallshopBox:hover>.price{ display:block; }*/
+.Bsix_button{ margin:3% auto 7%; width:30%; height:auto; /*outline:1px solid red;*/ }
+.Bsix_button::after{content:""; clear:both; display:block; }
+.six_button{ float:left; width:7%; height:auto; border:5px solid #d2d2d2; margin-right:4%; text-align:center; cursor:pointer; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+.six_button:hover{ border-color:#535353; }
+.six_button6{ margin-right:0; }
+.page_button{ border:none; width:auto; margin:0; margin-top:1%; transition:none; /*outline:1px solid red;*/ }
+.page_button:hover{ color:darkred; }
+.previous_button{ margin-right:6%;  }
+.next_button{ margin-left:6%; }
